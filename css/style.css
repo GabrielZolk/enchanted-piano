@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+.pian {
+    background-color: #121212;
+    width: 1500px;
+    height: 400px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controllers {
+    color: white;
+    font-weight: 600;
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.controllers h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.switcher {
+    width: 50px;
+    height: 25px;
+    background-color: #555;
+    display: flex;
+    border-radius: 50px;
+    padding: 4px;
+}
+
+.switch__button {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: #ddd;
+    border-radius: 25px;
+}
+
+.switcher--active {
+    background-color: aqua;
+    justify-content: flex-end;
+}
+
+.label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.keys {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    height: 300px;
+    padding: 28px 38px;
+    display: flex;
+}
+
+.white {
+    margin-left: -17px;
+    width: 85px;
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom: 8px solid #ddd;
+    color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.key span {
+    font-weight: 600;
+    position: absolute;
+    transition-duration: 300ms;
+}
+
+.key {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 8px;
+    user-select: none;
+}
+
+.black {
+    width: 60px;
+    background: linear-gradient(black, #333);
+    height: 135px;
+    border-radius: 0 0 5px 5px;
+    border-bottom: 8px solid #222;
+    margin-left: -20px;
+    color: rgba(255, 255, 255, 0.3);
+    z-index: 2;
+}
+
+.keys .white:nth-child(5) {
+    margin-right: 25px;
+}
+
+.keys .white:nth-child(12) {
+    margin-right: 25px;
+}
+
+.keys .white:nth-child(17) {
+    margin-right: 25px;
+}
+
+.keys .white:nth-child(24) {
+    margin-right: 25px;
+}
+
+.keys .white:nth-child(29) {
+    margin-right: 25px;
+}
+
+.black--pressed {
+    background: linear-gradient(#222, black);
+    border-bottom: none;
+    height: 133px;
+}
+
+.disabled-keys span {
+    opacity: 0;
+}
